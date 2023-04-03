@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import HomeIcon from "../../Utils/Icons/HomeIcon";
 import HamburgerMenuIcon from "../../Utils/Icons/HamburgerMenuIcon";
-import UserIcon from "../../Utils/Icons/UserIcon";
 import ExitIcon from "../../Utils/Icons/ExitIcon";
 
 const Navbar = () => {
@@ -69,9 +68,9 @@ const Navbar = () => {
 							))}
 						</div>
 						<div>
-							<div className="flex w-fit h-50 p-5 items-center space-x-2.5 rounded-full shadow shadow-gray/50 text-center">
+							<div className="flex w-fit h-50 p-4 items-center space-x-2.5 rounded-full shadow shadow-gray/50 text-center">
 								<HamburgerMenuIcon />
-								<UserIcon />
+								<img src="/images/user.png" alt="user" />
 							</div>
 						</div>
 					</div>

@@ -21,7 +21,7 @@ const LikeIcon = () => {
 							stroke="#fff"
 							strokeMiterlimit="10"
 							strokeWidth="1"
-							fill="#908e8e"
+							fill="#484848"
 						></path>
 					</g>
 				</g>

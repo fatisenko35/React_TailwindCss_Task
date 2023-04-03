@@ -1,39 +1,39 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
+// import axios from "axios";
 
 const Cards = () => {
 	const [items, setItems] = useState([]);
-	const fetchDatas = async () => {
-		let data = JSON.stringify({
-			page_number: 1,
-			number_of_advert: 20,
-			advert_order_menu_id: 3,
-			mapData: null,
-			cityRequest: null,
-			advertListDetailData: {},
-			property_type_ids: null,
-		});
+	// const fetchDatas = async () => {
+	// 	let data = JSON.stringify({
+	// 		page_number: 1,
+	// 		number_of_advert: 20,
+	// 		advert_order_menu_id: 3,
+	// 		mapData: null,
+	// 		cityRequest: null,
+	// 		advertListDetailData: {},
+	// 		property_type_ids: null,
+	// 	});
 
-		let config = {
-			method: "post",
-			maxBodyLength: Infinity,
-			url: "https://dev.guvenlekirala.tech/api/v1/advertlist",
-			headers: {
-				"Content-Type": "application/json",
-			},
-			data: data,
-		};
+	// 	let config = {
+	// 		method: "post",
+	// 		maxBodyLength: Infinity,
+	// 		url: "https://dev.guvenlekirala.tech/api/v1/advertlist",
+	// 		headers: {
+	// 			"Content-Type": "application/json",
+	// 		},
+	// 		data: data,
+	// 	};
 
-		axios
-			.request(config)
-			.then((response) => {
-				console.log(JSON.stringify(response.data));
-			})
-			.catch((error) => {
-				console.log(error);
-			});
-	};
+	// 	axios
+	// 		.request(config)
+	// 		.then((response) => {
+	// 			console.log(JSON.stringify(response.data));
+	// 		})
+	// 		.catch((error) => {
+	// 			console.log(error);
+	// 		});
+	// };
 	useEffect(() => {
 		// fetchDatas();
 		fetch("http://localhost:3001/advertListDatas")

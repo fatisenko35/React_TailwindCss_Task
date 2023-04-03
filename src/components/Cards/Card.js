@@ -23,7 +23,7 @@ const Card = ({
 				/>
 				<button
 					type="button"
-					className="text-gray absolute top-0 right-3 cursor-pointer"
+					className="text-[#484848] absolute top-0 right-3 cursor-pointer"
 				>
 					<LikeIcon />
 				</button>
@@ -31,15 +31,15 @@ const Card = ({
 			<div className="flex flex-col justify-center space-y-2.5 p-5 h-[13rem] bg-blue_light_extra">
 				<div className="font-[Montserrat]">
 					<div className="flex items-center space-x-2.5">
-						<p className=" overflow-ellipsis font-semibold text-[#484848]overflow-hidden 2xl:text-lg whitespace-nowrap text-sm md:text-base">
+						<p className=" overflow-ellipsis overflow-hidden 2xl:text-lg whitespace-nowrap text-sm md:text-base">
 							{fee} / Aylık
 						</p>
 						<ConfirmIcon />
 					</div>
 				</div>
 				<div className="font-[Montserrat]">
-					<p className=" overflow-ellipsis font-medium text-[#484848] overflow-hidden 2xl:text-base whitespace-nowrap text-xs md:text-sm">
-						{address}
+					<p className=" overflow-ellipsis font-medium text-[#484848] capitalize overflow-hidden 2xl:text-base whitespace-nowrap text-xs md:text-sm">
+						{address?.toLowerCase()}
 					</p>
 				</div>
 				<div className="font-[Montserrat]">
