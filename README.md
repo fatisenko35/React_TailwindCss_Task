@@ -1,7 +1,7 @@
 #### Installation
 ```bash
 # Clone project
-git clone https://github.com/fatisenko35/test-case.git
+git clone https://github.com/fatisenko35/React_TailwindCss_Task.git
 cd test-case
 
 # Install dependencies
